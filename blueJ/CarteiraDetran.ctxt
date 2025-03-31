@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CarteiraDetran
+comment1.params=
+comment1.target=CarteiraDetran()
+comment2.params=p
+comment2.target=void\ aumentarPontos(int)
+comment3.params=
+comment3.target=void\ consultaSaldo()
+comment4.params=
+comment4.target=void\ zerarCarteira()
+comment5.params=
+comment5.target=void\ verificaValidade()
+numComments=6

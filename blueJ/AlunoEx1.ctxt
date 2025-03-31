@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=AlunoEx1
+comment1.params=matricula\ nome\ ano\ meuCurso
+comment1.target=AlunoEx1(int,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=anoAtual
+comment2.target=int\ permanencia(int)
+comment3.params=cadeiras
+comment3.target=void\ informarDesc(int)
+comment4.params=
+comment4.target=int\ calculoMensalidade()
+comment5.params=sit
+comment5.target=void\ informarSit(java.lang.String)
+numComments=6

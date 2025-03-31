@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Livraria
+comment1.params=nom\ aut\ pre\ edi\ ano
+comment1.target=Livraria(java.lang.String,\ java.lang.String,\ float,\ int,\ int)
+comment2.params=percent
+comment2.target=void\ calculaPreco(int)
+comment3.params=
+comment3.target=void\ imprimeDados()
+numComments=4
