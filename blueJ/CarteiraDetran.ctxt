@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=CarteiraDetran
-comment1.params=
-comment1.target=CarteiraDetran()
+comment1.params=num\ cpf\ tipo\ mesA\ anoA\ mesE\ anoE
+comment1.target=CarteiraDetran(int,\ long,\ java.lang.String,\ int,\ int,\ int,\ int)
 comment2.params=p
 comment2.target=void\ aumentarPontos(int)
 comment3.params=
