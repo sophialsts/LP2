@@ -1,0 +1,11 @@
+Classe AlunoEx1
+
+atributos:
+int matricula, anoIngresso, disciplinas;
+String situacao, nome, curso;
+
+métodos:
+construtor
+permanencia
+informarDesc
+calcularMensalidade
