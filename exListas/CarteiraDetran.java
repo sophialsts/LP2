@@ -40,15 +40,24 @@ public class CarteiraDetran {
                 if(this.mesExpedicao <= this.mesAtual) System.out.println("Sua carteira esta vencida.");
                 else {
                     if(this.validade) System.out.println("Sua carteira esta valida.");
-                    else System.out.println("Sua carteira nao esta valida.");
+                    else {
+                        System.out.println("Sua carteira nao esta valida.");
+                        this.validade = false;
+                    }
                 }
             }
-            else System.out.println("Sua carteira esta vencida.");
+            else {
+                System.out.println("Sua carteira esta vencida.");
+                this.validade = false;
+            }
         }
         else if(this.validade) {
             System.out.println("Sua carteira esta valida");
         }
-        else System.out.println("Sua carteira nao esta valida");
+        else {
+            System.out.println("Sua carteira nao esta valida");
+            this.validade = false;
+        }
     }
 
     public void mostrarCarteira() {
@@ -60,6 +69,7 @@ public class CarteiraDetran {
     
     public static void main(String[] args) {
         CarteiraDetran novaCarteira = new CarteiraDetran(15, 10000000000l, "AB", "Sophia", 9, 2025, 10, 2011);
+        novaCarteira.verificaValidade();
         novaCarteira.mostrarCarteira();
     }
 }
