@@ -66,12 +66,95 @@ public class CarteiraDetran {
         else System.out.println("A situação atual da carteira é não válida.");
         System.out.println("Foi expedida em: " + this.mesExpedicao + "/" + this.anoExpedicao + " e está marcada com " + this.pontos + " pontos.");
     } 
+    public int getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(int pontos) {
+        this.pontos = pontos;
+    }
+
+    public int getNumeroCarteira() {
+        return numeroCarteira;
+    }
+
+    public void setNumeroCarteira(int numeroCarteira) {
+        this.numeroCarteira = numeroCarteira;
+    }
+
+    public String getTipoCarteira() {
+        return tipoCarteira;
+    }
+
+    public void setTipoCarteira(String tipoCarteira) {
+        this.tipoCarteira = tipoCarteira;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public long getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(long CPF) {
+        this.CPF = CPF;
+    }
+
+    public boolean isValidade() {
+        return validade;
+    }
+
+    public void setValidade(boolean validade) {
+        this.validade = validade;
+    }
+
+    public int getMesAtual() {
+        return mesAtual;
+    }
+
+    public void setMesAtual(int mesAtual) {
+        this.mesAtual = mesAtual;
+    }
+
+    public int getAnoAtual() {
+        return anoAtual;
+    }
+
+    public void setAnoAtual(int anoAtual) {
+        this.anoAtual = anoAtual;
+    }
+
+    public int getMesExpedicao() {
+        return mesExpedicao;
+    }
+
+    public void setMesExpedicao(int mesExpedicao) {
+        this.mesExpedicao = mesExpedicao;
+    }
+
+    public int getAnoExpedicao() {
+        return anoExpedicao;
+    }
+
+    public void setAnoExpedicao(int anoExpedicao) {
+        this.anoExpedicao = anoExpedicao;
+    }
     
     public static void main(String[] args) {
         CarteiraDetran novaCarteira = new CarteiraDetran(15, 10000000000l, "AB", "Sophia", 9, 2025, 10, 2011);
         novaCarteira.verificaValidade();
         novaCarteira.mostrarCarteira();
+        novaCarteira.aumentarPontos(5);
+        novaCarteira.consultaSaldo();
+        novaCarteira.zerarCarteira();
     }
+
 }
 
 
