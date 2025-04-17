@@ -14,5 +14,7 @@ public class Main {
 
         System.out.println(minhaLigacao.calcValor(duracaoLigacao));
 
+        minhaLigacao.verificaNumero("20000-0000");
+
     }
 }

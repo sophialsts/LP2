@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CarteiraDetran",
+            "request": "launch",
+            "mainClass": "com.sistemadetran.CarteiraDetran",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.sistematelefonia.Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.sistemafarmacia.Main",
+            "projectName": "demo"
+        },
+        {
             "type": "jdk",
             "request": "launch",
             "name": "Launch Java App"

@@ -19,6 +19,15 @@ public class Ligacao {
         return this.valorTotal;
     }
 
+    public void verificaNumero(String numeroAComparar) {
+        if(numeroAComparar.equals(getNumeroReferente())) 
+            System.out.println("Esse número originou a chamada");
+        else if(numeroAComparar.equals(getNumeroDestino()))
+            System.out.println("A ligação se destinava a esse número.");
+        else System.out.println("Esse número não fez parte da ligação");
+    
+    }
+
     public String getNumeroReferente() {
         return numeroReferente;
     }

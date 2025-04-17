@@ -1,3 +1,4 @@
+package com.sistemadetran;
 public class CarteiraDetran {  
     private int pontos, numeroCarteira;
     private String tipoCarteira, nome;
