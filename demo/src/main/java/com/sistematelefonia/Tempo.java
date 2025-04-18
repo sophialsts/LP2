@@ -12,8 +12,6 @@ public class Tempo {
     public int conversao(int hora, int minuto, int segundo) {
         int total = hora*60+minuto;
         
-        if(segundo > 0) total+=1;
-        
         return total;
     }
     
