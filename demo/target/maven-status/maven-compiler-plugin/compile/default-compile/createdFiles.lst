@@ -1,4 +1,9 @@
+com/sistemafarmacia/Main.class
+com/sistematelefonia/Ligacao.class
+com/sistematelefonia/Tempo.class
+com/sistemadetran/CarteiraDetran.class
+com/sistematelefonia/ContaTelefonica.class
 com/sistemafarmacia/Medicamento.class
 com/sistemafarmacia/Fabricante.class
-com/sistemafarmacia/Main.class
-com/sistematelefonia/App.class
+com/sistematelefonia/Main.class
+com/sistemalivraria/Livraria.class
