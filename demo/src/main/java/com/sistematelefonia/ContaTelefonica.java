@@ -28,12 +28,14 @@ public class ContaTelefonica {
 
     public float calcConta(String  localD) { //calcular conta das ligações somente pra um determinado destino
 
-        int totalContaDestino = 0;
+        float totalContaDestino = 0;
         int i = 0;
+
+        //System.out.println(this.ligacoes[i].getLocalDestino());
 
         while(this.ligacoes[i] != null) {
             if(localD.equals(this.ligacoes[i].getLocalDestino())) totalContaDestino += this.ligacoes[i].getValorTotal();
-            else i++;
+            i++;
         }
 
         return totalContaDestino;

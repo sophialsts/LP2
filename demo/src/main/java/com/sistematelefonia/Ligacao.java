@@ -4,28 +4,28 @@ public class Ligacao {
     private String numeroReferente, localOrigem, numeroDestino, localDestino;
     private float valorTotal;
     private Tempo momentoInicio, momentoFim;
-    
+
     public Ligacao(Tempo inicio, String localOrigem, String numeroRef, String numeroDest) {
         this.momentoInicio = inicio;
         this.localOrigem = localOrigem;
         this.numeroReferente = numeroRef;
         this.numeroDestino = numeroDest;
     }
-    
-    public float calcValor(int duracao) { 
 
-        setValorTotal(1*duracao);
+    public float calcValor(int duracao) {
+
+        setValorTotal(duracao);
 
         return this.valorTotal;
     }
 
     public void verificaNumero(String numeroAComparar) {
-        if(numeroAComparar.equals(getNumeroReferente())) 
+        if(numeroAComparar.equals(getNumeroReferente()))
             System.out.println("Esse número originou a chamada");
         else if(numeroAComparar.equals(getNumeroDestino()))
             System.out.println("A ligação se destinava a esse número.");
         else System.out.println("Esse número não fez parte da ligação");
-    
+
     }
 
     public String getNumeroReferente() {

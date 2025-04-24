@@ -10,14 +10,24 @@ public class Tempo {
     }
 
     public int conversao(int hora, int minuto, int segundo) {
-        int total = hora*60+minuto;
-        
+        int total = hora*60*60+minuto*60+segundo; //transformar tudo em segundos
+
         return total;
     }
-    
+
     public int calcDiff(int inicio, int fim) {
-        int diferenca = fim - inicio;
-        return diferenca;
+        int duracao = fim - inicio;
+
+        if(duracao % 60 != 0) {
+            duracao -= (duracao%60);
+            duracao /= 60;
+            duracao++;
+        }
+        else {
+            duracao /= 60;
+        }
+
+        return duracao; //duração em minutos já contando se tiver segundos a mais que 0
     }
 
     public int getSegundo() {
@@ -43,5 +53,5 @@ public class Tempo {
     public void setHora(int hora) {
         this.hora = hora;
     }
-    
+
 }
