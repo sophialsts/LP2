@@ -14,7 +14,7 @@ public class ContaTelefonica {
     }
 
     public float calcConta() {
-        int totalConta = 0;
+        float totalConta = 0;
         int i = 0;
 
         while(this.ligacoes[i] != null) {

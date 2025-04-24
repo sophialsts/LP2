@@ -5,7 +5,7 @@ public class Loja {
     private long cnpj;
     private int digCnpj;
     private float area, faturamento;
- 
+
     public Loja(String n, long cnpj, int d, int f, String pa ) {
         this(n,n,cnpj,d);
         this.faturamento = f;
@@ -17,12 +17,14 @@ public class Loja {
         this.cnpj = cnpj;
         this.digCnpj = d;
     }
-    //fazer gets e sets
-    public void verificaFaturamento () {
-        
+    public void verificaFaturamento (Loja loja1) {
+        if(this.faturamento > loja1.getFaturamento()) System.out.println("Essa loja tem faturamento superior a que foi comparada.");
+        else if(this.faturamento == loja1.getFaturamento()) System.out.println("As lojas tem faturamentos iguais");
+        else System.out.println("Essa loja tem faturamento menor a que foi comparada.");
     }
-    public float calcAluguel (float a) {
-        this.faturamento = 50*a;
+
+    public float calcAluguel (float area) {
+        this.faturamento = 50*area;
         return this.faturamento;
     }
 
