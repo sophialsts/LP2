@@ -11,7 +11,7 @@ public class Shopping {
         int cont = 0;
         float maiorFaturamento = 0;
 
-        if(this.loja[0] == null) return;
+        if(this.lojas[0] == null) return null;
         maiorFaturamento = this.lojas[0].getFaturamento();
 
         while(this.lojas[i] != null ) {
