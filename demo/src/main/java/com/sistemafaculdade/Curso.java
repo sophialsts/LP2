@@ -1,10 +1,12 @@
 package com.sistemafaculdade;
+import java.util.ArrayList;
 
 public class Curso {
 
     private String nome;
     private int codigo, duracao, anoCriacaoC;
     private float valorTotal;
+    private ArrayList<Aluno> alunosDoCurso;
 
     public String getNome() {
         return nome;
@@ -53,6 +55,7 @@ public class Curso {
         this.duracao = d;
         this.valorTotal = vt;
         this.anoCriacaoC = ac;
+        this.alunosDoCurso = new ArrayList<Aluno>();
     }
 
     public Curso(String n, int c,float vt, int ac) {

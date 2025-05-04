@@ -5,12 +5,29 @@ public class Faculdade {
 
     private String nome;
     private ArrayList<Curso> cursos;
+    private ArrayList<Aluno> alunosFaculdade;
     private int anoCriacao;
 
-    public Curso getCursos(Curso cursoEspecif) {
-        for (Curso i:cursos) {
-            if(i == cursoEspecif){
-                return cursoEspecif;
+    public Faculdade(String nome, int anoCriacao) {
+        this.nome = nome;
+        this.anoCriacao = anoCriacao;
+        this.cursos = new ArrayList<Curso>();
+        this.alunosFaculdade = new ArrayList<Aluno>();
+    }
+
+    public Curso getCursos(String nomeCurso) {
+    	for (Curso i:cursos) {
+            if(i.getNome().equals(nomeCurso)){
+                return i;
+            }
+	}
+	return null;
+    }
+
+    public Aluno getAlunos(String nomeAluno) {
+        for (Aluno i:alunosFaculdade) {
+            if(i.getNome().equals(nomeAluno)){
+                return i;
             }
         }
         return null;
@@ -24,11 +41,6 @@ public class Faculdade {
         return anoCriacao;
     }
 
-    public Faculdade(String nome, int anoCriacao) {
-        this.nome = nome;
-        this.anoCriacao = anoCriacao;
-        this.cursos = new ArrayList<Curso>();
-    }
 
     public void addCurso(Curso novoCurso) {
 
@@ -53,6 +65,16 @@ public class Faculdade {
 
     }
 
+    public void addAluno(Aluno novoAluno) {
+
+        for(Aluno iterator:alunosFaculdade) {
+            if(iterator.getNome().equals(novoAluno.getNome())) {
+                return;
+            }
+        }
+        this.alunosFaculdade.add(novoAluno);
+    }
+
     public Faculdade novaFaculdade(String nomeNovo, int anoNovo){
         Faculdade novaFaculdade = new Faculdade(nomeNovo, anoNovo);
 
@@ -64,5 +86,7 @@ public class Faculdade {
 
         return novaFaculdade;
     }
+
+    //criar uma função calc alunos total
 
 }
