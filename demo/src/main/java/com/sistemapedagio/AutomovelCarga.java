@@ -20,4 +20,5 @@ public class AutomovelCarga extends Automovel {
     public float cobraPassagem(Passagem novaPassagem) {
         return peso*2; //2 reais por kilo
     }
+
 }

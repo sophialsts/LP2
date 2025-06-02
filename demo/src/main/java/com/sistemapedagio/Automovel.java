@@ -1,7 +1,7 @@
 package com.sistemapedagio;
 import java.util.ArrayList;
 
-public class Automovel {
+public abstract class Automovel {
 
     private String placa;
     private int anoFab;
@@ -32,9 +32,7 @@ public class Automovel {
         this.passagens.add(novaPassagem);
     }
 
-    public float cobraPassagem() {
-        return 6; //do automovel pequeno é o genérico
-    }
+    public abstract float cobraPassagem(); //do automovel pequeno é o genérico
 
     public int qtdPassagens() {
         return this.passagens.size();
