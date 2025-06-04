@@ -16,4 +16,8 @@ public class AutomovelPequeno extends Automovel {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+
+    public float cobraPassagem() {
+        return 0;
+    }
 }

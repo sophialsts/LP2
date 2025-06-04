@@ -11,6 +11,17 @@ public class SegResidencial extends Seguro implements Print {
         this.anoConstrucao = anoConstrucao;
     }
 
+    public void imprimir() {
+        System.out.println("Endereço:" + endereco);
+        System.out.println("Beneficiário:" + beneficiario);
+        System.out.println("Valor da apolice:" + valorApolice);
+        System.out.println("Ano de construção:" + anoConstrucao);
+    }
+
+    public void gerarPdf() {
+
+    }
+
     public String getEndereco() {
         return endereco;
     }
@@ -29,6 +40,12 @@ public class SegResidencial extends Seguro implements Print {
 
     public float calcValor() {
 
+        float depreciacao = 0;
 
+        for(int i=0; i<2025-anoConstrucao; i++) {
+            depreciacao += (valorApolice*0.002);
+        }
+
+        return valorApolice - depreciacao;
     }
 }
