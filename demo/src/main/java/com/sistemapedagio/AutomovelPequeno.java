@@ -2,7 +2,7 @@ package com.sistemapedagio;
 
 public class AutomovelPequeno extends Automovel {
 
-        protected String modelo;
+    protected String modelo;
 
     public AutomovelPequeno(String placa, int anoFab, String modelo) {
         super(placa, anoFab);
@@ -15,5 +15,9 @@ public class AutomovelPequeno extends Automovel {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public float cobraPassagem() {
+        return 0;
     }
 }

@@ -24,4 +24,10 @@ public class SegVida extends Seguro {
         return 0;
     }
 
+    public void imprimir() {
+        System.out.println("Nome do beneficiário:" + beneficiario);
+        System.out.println("Valor da apolice:" + valorApolice);
+        System.out.println("Idade do segurado:" + idadeSegurado);
+    }
+
 }

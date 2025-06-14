@@ -28,7 +28,19 @@ public class SegResidencial extends Seguro implements Print {
     }
 
     public float calcValor() {
+        float depreciacao = 0;
 
+        for(int i=0; i<2025-anoConstrucao;i++) depreciacao += (float) (valorApolice*0.002);
+
+        return valorApolice-depreciacao;
 
     }
+
+    public void imprimir() {
+        System.out.println("Nome do beneficiário:" + beneficiario);
+        System.out.println("Valor da apolice:" + valorApolice);
+        System.out.println("Endereço:" + endereco);
+        System.out.println("Ano de Construção:" + anoConstrucao);
+    }
+
 }

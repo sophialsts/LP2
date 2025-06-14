@@ -17,7 +17,7 @@ public class AutomovelPasseio extends Automovel {
         this.quantPassageiros = quantPassageiros;
     }
 
-    public float cobraPassagem(Passagem novaPassagem) {
+    public float cobraPassagem() {
         return 5*quantPassageiros; //5 reais por pessoa
     }
 }

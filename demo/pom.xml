@@ -46,7 +46,6 @@
               <goal>enforce</goal>
             </goals>
             <configuration>
-            <release>8</release>
               <rules>
                 <requireMavenVersion>
                   <version>3.6.3</version>
@@ -76,7 +75,6 @@
         <configuration>
           <configLocation>com/github/ngeor/checkstyle.xml</configLocation>
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
-          <skip>${skipTests}</skip>
         </configuration>
         <executions>
           <execution>
